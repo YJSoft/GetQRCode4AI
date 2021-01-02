@@ -22,7 +22,7 @@
     <div id="output"></div>
     <script>
         $(document).ready(function() {
-            var strText = typeof window.AppInventor !== 'undefined' ? window.AppInventor.getWebViewString() : "INVALID";
+            var strText = typeof window.AppInventor !== 'undefined' ? window.AppInventor.getWebViewString() : prompt("Input QR String");
             $('#output').qrcode(strText);
         });
     </script>
